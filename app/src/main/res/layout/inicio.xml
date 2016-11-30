@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/mod3"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="fill_horizontal"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/uta1"
+            android:id="@+id/imageView" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="\nUNIVERSIDAD TECNOLOGICA\nDE AGUASCALIENTES"
+            android:textColor="#e6d9ed"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:id="@+id/tvUta1"
+            android:gravity="right" />
+
+    </LinearLayout>
+
+    //PROFESOR
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:paddingTop="40dp"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Profesor:"
+            android:textStyle="bold"
+            android:textColor="#3a4f5d"
+            android:id="@+id/tvProfe" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/tvid"
+            android:layout_weight="0.88" />
+
+    </LinearLayout>
+
+    //CARRERA
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:paddingTop="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Carrera:"
+            android:textStyle="bold"
+            android:textColor="#3a4f5d"
+            android:id="@+id/tvCarre" />
+
+        <Spinner
+            style="@android:style/Widget.Spinner"
+            android:id="@+id/spCarrera"
+            android:layout_width="229dp"
+            android:layout_height="50dp"
+            android:entries="@array/carrera"
+            android:layout_below="@+id/text_carrera"
+            android:drawSelectorOnTop="true"/>
+    </LinearLayout>
+
+
+    // FECHA
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|right"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Fecha:"
+            android:textStyle="bold"
+            android:textColor="#3a4f5d"
+            android:id="@+id/tvFecha1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/tvFecha"
+            android:layout_weight="0.45"
+            android:gravity="center_horizontal" />
+    </LinearLayout>
+
+
+    //EDIFICIO
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:paddingTop="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Edificio:"
+            android:textStyle="bold"
+            android:textColor="#3a4f5d"
+            android:id="@+id/tvEdificio" />
+
+        <Spinner
+            style="@android:style/Widget.Spinner"
+            android:id="@+id/spEdificio"
+            android:layout_width="229dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/text_edificio"
+            android:drawSelectorOnTop="true"/>
+    </LinearLayout>
+
+
+    //SALON Y GRUPO
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Salón:"
+            android:textStyle="bold"
+            android:textColor="#3a4f5d"
+            android:id="@+id/tvSalon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Grupo:"
+            android:paddingLeft="180dp"
+            android:textStyle="bold"
+            android:textColor="#3a4f5d"
+            android:id="@+id/tvGpo" />
+    </LinearLayout>
+
+    //CARRERA
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:paddingTop="5dp"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            style="@android:style/Widget.Spinner"
+            android:id="@+id/spSalon"
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+
+            android:layout_below="@+id/text_carrera"
+            android:drawSelectorOnTop="true"/>
+
+        <Spinner
+            style="@android:style/Widget.Spinner"
+            android:id="@+id/spGrupo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/text_carrera"
+            android:drawSelectorOnTop="true"
+            android:entries="@array/grupo"/>
+    </LinearLayout>
+
+
+    // HORARIO
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:paddingTop="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Horario:"
+            android:textStyle="bold"
+            android:textColor="#3a4f5d"
+            android:id="@+id/tvHorario" />
+
+        <Spinner
+            style="@android:style/Widget.Spinner"
+            android:id="@+id/spHorario"
+            android:layout_width="229dp"
+            android:layout_height="50dp"
+            android:entries="@array/horario"
+            android:layout_below="@+id/text_horario"
+            android:drawSelectorOnTop="true"/>
+    </LinearLayout>
+
+    //Botón ENVIAR
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ENVIAR"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#e6d9ed"
+            android:background="#061480"
+            android:id="@+id/btnEnviar" />
+    </LinearLayout>
+
+</LinearLayout>

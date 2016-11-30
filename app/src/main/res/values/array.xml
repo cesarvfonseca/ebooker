@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="grupo">
+        <item>2°A</item>
+        <item>2°C</item>
+        <item>8°F</item>
+        <item>8°D</item>
+    </string-array>
+
+    <string-array name="carrera">
+        <item>TICS</item>
+        <item>MAI</item>
+        <item>DNAM</item>
+        <item>PIAM</item>
+    </string-array>
+
+    <string-array name="horario">
+        <item>17:00 - 17:50</item>
+        <item>17:50 - 18:40</item>
+        <item>18:40 - 19:30</item>
+        <item>19:30 - 20:20</item>
+    </string-array>
+
+    <string-array name="Aulas">
+        <item>Aula 1</item>
+        <item>Aula 2</item>
+        <item>Aula 3</item>
+        <item>Aula 4</item>
+        <item>Aula  5</item>
+        <item>Aula 6</item>
+        <item>Aula 7</item>
+        <item>Vinculación</item>
+        <item>A. Inteligentes</item>
+    </string-array>
+
+    <string-array name="av">
+        <item>Audiovisual</item>
+    </string-array>
+
+    <string-array name="a6">
+        <item>Audiovisual</item>
+        <item>Multimedia</item>
+    </string-array>
+
+    <string-array name="a7">
+        <item>Audiovisual</item>
+        <item>Camara Gesel</item>
+    </string-array>
+
+    <string-array name="Vin">
+        <item>Salón 1</item>
+        <item>Salón 2</item>
+        <item>Salón 3</item>
+        <item>Panisoptica</item>
+    </string-array>
+
+    <string-array name="Aint">
+        <item>Salón 1</item>
+        <item>Salón 2</item>
+        <item>Salón 3</item>
+        <item>Salón 4</item>
+        <item>Salón 5</item>
+        <item>Salón 6</item>
+        <item>Salón 7</item>
+        <item>PLM</item>
+    </string-array>
+
+</resources>
